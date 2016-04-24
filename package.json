@@ -14,5 +14,8 @@
     "mecab-async": "^0.1.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.7.7"
   }
 }
