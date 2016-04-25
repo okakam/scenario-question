@@ -1,9 +1,9 @@
 'use strict';
 
-var express = require('express');
-var router = express.Router();
-var MeCab = require('mecab-async');
-var mecab = new MeCab();
+const express = require('express');
+const router = express.Router();
+const MeCab = require('mecab-async');
+const mecab = new MeCab();
 
 /* GET home page. */
 //noinspection JSUnresolvedFunction
@@ -15,7 +15,7 @@ router.get('/', function (req, res, next) {
 });
 
 router.post('/', function (req, res, next) {
-    var result = mecab.parseSync(req.body.answer);
+    let result = mecab.parseSync(req.body.answer);
     res.render('question', {
         Question: "Ques",
         Answer: result
